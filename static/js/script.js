@@ -8,7 +8,7 @@ function repl_profile_link() {
   document.location.href = "https://replit.com/@lockSmxth5x";
 }
 function game_site_link() {
-  document.location.href = "https://locksmxth5x.github.io/home";
+  document.location.href = "https://locksmxth5x.github.io/gamehub";
 }
 function contact_link() {
   document.location.href = "#";
