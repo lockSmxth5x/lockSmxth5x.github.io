@@ -1,0 +1,276 @@
+@import url(https://fonts.bunny.net/css?family=albert-sans:400|athiti:400|be-vietnam-pro:400);
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("https://raw.githubusercontent.com/sahibjotsaggu/San-Francisco-Pro-Fonts/master/SF-Pro-Text-Regular.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("https://raw.githubusercontent.com/sahibjotsaggu/San-Francisco-Pro-Fonts/master/SF-Pro-Rounded-Regular.otf");
+  font-style: normal;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  z-index: 0;
+}
+
+html,
+body {
+  background-color: #000;
+  color: antiquewhite;
+  /* -webkit-font-smoothing: none; */
+  -webkit-font-smoothing: antialiased;
+}
+
+#nav {
+  background: #22222290;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 97%;
+  height: 3.3em;
+  position: fixed;
+  left: 1.5%;
+  top: 0.75rem;
+  border-radius: 2em;
+  font-family: "Albert Sans", sans-serif;
+  z-index: 1;
+  /* border: 3px solid #eee3; */
+  /* padding-bottom: 3px; */
+}
+
+#nav img {
+  width: 105px;
+  height: 108px;
+  float: left;
+  position: relative;
+  left: 1.2rem;
+  bottom: 1.75rem;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  opacity: 50%;
+  transition: 300ms opacity;
+}
+
+#nav img:hover {
+  opacity: 100;
+}
+
+#nav nav {
+  float: right;
+  position: relative;
+  right: 0.7rem;
+  top: 0.9rem;
+}
+
+#nav nav a {
+  padding: 0px 0.7rem;
+  cursor: pointer;
+  color: #999;
+  transition: ease 0.25s;
+}
+
+#nav nav a:hover {
+  color: #fff;
+}
+
+#greeting {
+  width: 99%;
+  /* left: 1%; */
+  height: 65vh;
+  background: linear-gradient(
+    188deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(56, 56, 56, 1) 100%
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-size: 210% 215%;
+  animation: gradient 10s ease infinite;
+  /* position: absolute; */
+  margin-top: 4.6rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  border-radius: 1.5em;
+  display: flexbox;
+}
+
+#greeting_header {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  top: 30%;
+}
+
+#greeting_header h1 {
+  font-size: 5em;
+}
+
+#greeting_header h4 {
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+#cards {
+  /* background-color: #666;  */
+  width: 99.3%;
+  height: 70vh;
+  /* position: absolute; */
+  /* left: 1%; */
+  /* top: 32.2rem; */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+@media (max-width: 400px) {
+  #cards {
+    flex-direction: column;
+  }
+  #GitHub,
+  #Replit {
+    width: 100%;
+  }
+}
+
+#GitHub {
+  /* width: 49%; */
+  min-width: 200px;
+  /* height: 100%; */
+  /* background-color: azure; */
+  position: relative;
+  background: linear-gradient(0deg, rgb(5, 1, 86) 0%, rgb(0, 1, 28) 100%);
+  backdrop-filter: blur(10px);
+  background-size: 500% 500%;
+  animation: gradient 5s ease infinite;
+  top: 0px;
+  /* float: left; */
+  border-radius: 1.5%;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #1d0349, #002db3);
+}
+
+#Replit {
+  /* width: 50%; */
+  min-width: 200px;
+  /* height: 100%; */
+  background-color: azure;
+  /* position: relative; */
+  background: linear-gradient(0deg, rgb(121, 35, 1) 0%, rgb(244, 82, 1) 100%);
+  backdrop-filter: blur(10px);
+  background-size: 150% 200%;
+  animation: gradient 2s ease infinite;
+  top: 0px;
+  /* float: right; */
+  border-radius: 1.5%;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(180deg, #ff7300, #8a3000);
+}
+
+#GitHub,
+#Replit {
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+}
+
+#GitHub h1,
+#Replit h1 {
+  font-size: 3.8em;
+  /* font-weight: 200;  */ /*helsoidfnesaliejf */
+  font-family: "SF Pro Text", sans-serif;
+  /* position: relative; */
+  padding-top: 0.25em;
+}
+
+#GitHub h4,
+#Replit h4 {
+  /* position: relative; */
+  padding-top: 0.25em;
+  font-family: "SF Pro Rounded", serif;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+#cards2 {
+  width: 99.24%;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  height: 70vh;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 180, 34, 1) 0%,
+    rgba(43, 50, 45, 1) 99%
+  );
+  background-size: 130% 145%;
+  animation: gradient 5s ease infinite;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(
+    0deg,
+    rgba(8, 180, 34, 1) 0%,
+    rgba(63, 220, 100, 1) 99%
+  );
+  overflow: hidden;
+}
+
+#GameSite_Card {
+  position: relative;
+  top: 0.4em;
+}
+
+#cards2 #GameSite_Card h1 {
+  font-size: 3.8em;
+  /* font-weight: 200;  */ /*helsoidfnesaliejf */
+  font-family: "SF Pro Text", sans-serif;
+  /* position: relative; */
+  padding-top: 0.1em;
+}
+
+#cards2 #GameSite_Card h4 {
+  /* position: relative; */
+  padding-top: 0.25em;
+  font-family: "SF Pro Rounded", serif;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+#imgContainrr {
+  padding-top: 2.7em;
+}
