@@ -11,7 +11,7 @@ function game_site_link() {
   document.location.href = "https://locksmxth5x.github.io/gamehub";
 }
 function contact_link() {
-  document.location.href = "#";
+  document.location.href = "tel:901-878-9029";
 }
 
 feather.replace();
