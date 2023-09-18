@@ -107,11 +107,9 @@ body {
   width: 99%;
   /* left: 1%; */
   height: 65vh;
-  background: linear-gradient(
-    188deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(56, 56, 56, 1) 100%
-  );
+  background: linear-gradient(188deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(56, 56, 56, 1) 100%);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   background-size: 210% 215%;
@@ -121,6 +119,7 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
   border-radius: 1.5em;
   display: flexbox;
+  overflow: hidden;
 }
 
 #greeting_header {
@@ -157,6 +156,7 @@ body {
   #cards {
     flex-direction: column;
   }
+
   #GitHub,
   #Replit {
     width: 100%;
@@ -180,6 +180,7 @@ body {
   border-image-slice: 1;
   border-width: 5px;
   border-image-source: linear-gradient(to left, #1d0349, #002db3);
+  overflow: hidden;
 }
 
 #Replit {
@@ -199,6 +200,7 @@ body {
   border-image-slice: 1;
   border-width: 5px;
   border-image-source: linear-gradient(180deg, #ff7300, #8a3000);
+  overflow: hidden;
 }
 
 #GitHub,
@@ -211,7 +213,8 @@ body {
 #GitHub h1,
 #Replit h1 {
   font-size: 3.8em;
-  /* font-weight: 200;  */ /*helsoidfnesaliejf */
+  /* font-weight: 200;  */
+  /*helsoidfnesaliejf */
   font-family: "SF Pro Text", sans-serif;
   /* position: relative; */
   padding-top: 0.25em;
@@ -232,21 +235,17 @@ body {
   position: relative;
   top: 10px;
   height: 70vh;
-  background: linear-gradient(
-    180deg,
-    rgba(8, 180, 34, 1) 0%,
-    rgba(43, 50, 45, 1) 99%
-  );
+  background: linear-gradient(180deg,
+      rgba(8, 180, 34, 1) 0%,
+      rgba(43, 50, 45, 1) 99%);
   background-size: 130% 145%;
   animation: gradient 5s ease infinite;
   border: 10px solid;
   border-image-slice: 1;
   border-width: 5px;
-  border-image-source: linear-gradient(
-    0deg,
-    rgba(8, 180, 34, 1) 0%,
-    rgba(63, 220, 100, 1) 99%
-  );
+  border-image-source: linear-gradient(0deg,
+      rgba(8, 180, 34, 1) 0%,
+      rgba(63, 220, 100, 1) 99%);
   overflow: hidden;
 }
 
@@ -257,7 +256,8 @@ body {
 
 #cards2 #GameSite_Card h1 {
   font-size: 3.8em;
-  /* font-weight: 200;  */ /*helsoidfnesaliejf */
+  /* font-weight: 200;  */
+  /*helsoidfnesaliejf */
   font-family: "SF Pro Text", sans-serif;
   /* position: relative; */
   padding-top: 0.1em;
