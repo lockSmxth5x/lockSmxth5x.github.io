@@ -1,2 +1,2 @@
 # lockSmxth5x.github.io
-my home site.
+my home site. for all to see.
