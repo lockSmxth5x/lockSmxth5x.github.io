@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
   <link rel="stylesheet" href="/static/css/movement.css" type="text/css" />
+  <link rel="stylesheet" href="/static/css/custom_right_click.css" type="text/css" />
   <link rel="shortcut icon" href="/static/images/logo.png">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -23,7 +24,7 @@
   <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
-<body>
+<body onload="custom_right_click_menu();">
   <div id="content">
 
     <div id="nav" data-m="bounce-down">
@@ -94,6 +95,23 @@
         loop: true
       })
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="./static/js/disable_ctrl_u.js"></script>
+
+    <div id="contextMenu" class="context-menu" style="display:none">
+      <ul>
+        <li><a href="#">Element-1</a></li>
+        <li><a href="#">Element-2</a></li>
+        <li><a href="#">Element-3</a></li>
+        <li><a href="#">Element-4</a></li>
+        <li><a href="#">Element-5</a></li>
+        <li><a href="#">Element-6</a></li>
+        <li><a href="#">Element-7</a></li>
+      </ul>
+    </div>
 
   </div>
 </body>

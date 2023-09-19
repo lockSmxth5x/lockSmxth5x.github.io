@@ -1,0 +1,39 @@
+.context-menu {
+  position: absolute;
+  text-align: center;
+  background: #222;
+  /* border: 1px solid antiquewhite;*/
+  border-radius: 30px;
+}
+
+.context-menu ul {
+  padding: 0px;
+  margin: 0px;
+  min-width: 150px;
+  list-style: none;
+}
+
+.context-menu ul li {
+  padding-bottom: 7px;
+  padding-top: 7px;
+  /* border: 0.5px solid antiquewhite; */
+}
+
+.context-menu ul li a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.context-menu ul li:hover {
+  background: #ffffff10;
+}
+
+.context-menu ul li:first-child:hover {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.context-menu ul li:last-child:hover {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}

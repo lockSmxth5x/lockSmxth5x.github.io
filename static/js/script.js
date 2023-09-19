@@ -13,5 +13,32 @@ function game_site_link() {
 function contact_link() {
   document.location.href = "tel:901-878-9029";
 }
+function custom_right_click_menu() {
+  document.onclick = hideMenu;
+  document.oncontextmenu = rightClick;
+
+  function hideMenu() {
+    document.getElementById(
+      "contextMenu").style.display = "none"
+  }
+
+  function rightClick(e) {
+    e.preventDefault();
+
+    if (document.getElementById(
+      "contextMenu").style.display == "block")
+      hideMenu();
+    else {
+      var menu = document
+        .getElementById("contextMenu")
+
+      menu.style.display = 'block';
+      menu.style.left = e.pageX + "px";
+      menu.style.top = e.pageY + "px";
+    }
+  }
+}
+
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 feather.replace();

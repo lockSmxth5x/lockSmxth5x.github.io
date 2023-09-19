@@ -31,6 +31,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* pointer-events: none; */
 }
 
 * {
@@ -97,6 +98,10 @@ body {
   cursor: pointer;
   color: #999;
   transition: ease 0.25s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 #nav nav a:hover {
@@ -131,18 +136,26 @@ body {
 
 #greeting_header h1 {
   font-size: 5em;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 #greeting_header h4 {
   justify-content: center;
   font-size: 1.5em;
   font-weight: 200;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 #cards {
   /* background-color: #666;  */
   width: 99.3%;
-  height: 78vh;
+  height: 79.5vh;
   /* position: absolute; */
   /* left: 1%; */
   /* top: 32.2rem; */
@@ -150,17 +163,6 @@ body {
   flex-direction: row;
   gap: 10px;
   padding-top: 10px;
-}
-
-@media (max-width: 400px) {
-  #cards {
-    flex-direction: column;
-  }
-
-  #GitHub,
-  #Replit {
-    width: 100%;
-  }
 }
 
 #GitHub {
@@ -218,6 +220,10 @@ body {
   font-family: "SF Pro Text", sans-serif;
   /* position: relative; */
   padding-top: 0.25em;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 #GitHub h4,
@@ -227,6 +233,10 @@ body {
   font-family: "SF Pro Rounded", serif;
   font-weight: 200;
   font-size: 1.5em;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 #cards2 {
@@ -261,6 +271,10 @@ body {
   font-family: "SF Pro Text", sans-serif;
   /* position: relative; */
   padding-top: 0.1em;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 #cards2 #GameSite_Card h4 {
@@ -269,6 +283,10 @@ body {
   font-family: "SF Pro Rounded", serif;
   font-weight: 200;
   font-size: 1.5em;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 #imgContainrr {
