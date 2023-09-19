@@ -26,6 +26,10 @@
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 #content {
   display: flex;
   flex-direction: column;
@@ -49,6 +53,8 @@ body {
   color: antiquewhite;
   /* -webkit-font-smoothing: none; */
   -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body {
