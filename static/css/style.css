@@ -51,6 +51,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  user-select: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  -ms-user-drag: none;
+}
+
 #nav {
   background: #22222290;
   backdrop-filter: blur(10px);
@@ -98,10 +108,6 @@ body {
   cursor: pointer;
   color: #999;
   transition: ease 0.25s;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
 }
 
 #nav nav a:hover {
@@ -136,20 +142,12 @@ body {
 
 #greeting_header h1 {
   font-size: 5em;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
 }
 
 #greeting_header h4 {
   justify-content: center;
   font-size: 1.5em;
   font-weight: 200;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
 }
 
 #cards {
@@ -220,10 +218,6 @@ body {
   font-family: "SF Pro Text", sans-serif;
   /* position: relative; */
   padding-top: 0.25em;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
 }
 
 #GitHub h4,
@@ -233,10 +227,6 @@ body {
   font-family: "SF Pro Rounded", serif;
   font-weight: 200;
   font-size: 1.5em;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
 }
 
 #cards2 {
@@ -271,10 +261,6 @@ body {
   font-family: "SF Pro Text", sans-serif;
   /* position: relative; */
   padding-top: 0.1em;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
 }
 
 #cards2 #GameSite_Card h4 {
@@ -283,10 +269,6 @@ body {
   font-family: "SF Pro Rounded", serif;
   font-weight: 200;
   font-size: 1.5em;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
 }
 
 #imgContainrr {
