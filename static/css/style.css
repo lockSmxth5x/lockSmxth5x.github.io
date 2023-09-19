@@ -83,7 +83,7 @@ body {
   float: left;
   position: relative;
   left: 1.2rem;
-  bottom: 1.75rem;
+  bottom: 1.81rem;
   cursor: pointer;
   user-select: none;
   -webkit-user-drag: none;
@@ -100,7 +100,7 @@ body {
   float: right;
   position: relative;
   right: 0.7rem;
-  top: 0.9rem;
+  top: 0.8rem;
 }
 
 #nav nav a {
