@@ -203,7 +203,7 @@ body {
   text-align: center;
   position: relative;
   top: 10px;
-  height: 70vh;
+  height: 60vh;
   background: linear-gradient(175deg, rgba(118, 200, 19, 1) 0%, rgba(0, 75, 35, 1) 100%);
   overflow: hidden;
 }
