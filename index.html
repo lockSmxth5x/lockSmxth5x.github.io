@@ -24,7 +24,7 @@
   <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
-<body onload="custom_right_click_menu();">
+<body onload="custom_right_click_menu();" onkeydown="return false">
   <div id="content">
 
     <div id="nav" data-m="bounce-down">
@@ -98,9 +98,7 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
-    <script src="./static/js/disable_ctrl_u.js"></script>
-
+    
     <div id="contextMenu" class="context-menu" style="display:none">
       <ul>
         <li><a onclick="home_link();"><i data-feather="home"></i>Home</a></li>
