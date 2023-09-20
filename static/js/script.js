@@ -39,6 +39,27 @@ function custom_right_click_menu() {
   }
 }
 
+function tab_focus_title_thing() {
+  var pageTitle = document.title;
+  var attentionMessage = 'Cya! - LockSmxth5x';
+
+  document.addEventListener('visibilitychange', function(e) {
+    var isPageActive = !document.hidden;
+
+    if (!isPageActive) {
+      document.title = attentionMessage;
+      setTimeout(() => { document.title = pageTitle; }, 1300);
+    } else {
+      document.title = "Hey! - " + pageTitle;
+      setTimeout(() => { document.title = pageTitle; }, 1300);
+    }
+  });
+}
+
+
+
+
+
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 feather.replace();
