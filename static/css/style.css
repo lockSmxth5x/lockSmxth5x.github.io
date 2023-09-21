@@ -110,11 +110,16 @@ body {
   padding: 0px 0.7rem;
   cursor: pointer;
   color: #999;
-  transition: ease 0.25s;
+  transition: ease-out 0.37s;
+  transform: translateY(0);
+  will-change: transform;
+  display: inline-block;
 }
 
 #nav nav a:hover {
   color: #fff;
+  transform: translateY(-0.3rem);
+  transition: ease-out 0.375s;
 }
 
 #greeting {
