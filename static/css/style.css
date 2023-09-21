@@ -164,6 +164,12 @@ body {
   padding-top: 10px;
 }
 
+@media only screen and not (max-width: 1850px) {
+  #cards {
+    width: 99%;
+  }
+}
+
 #GitHub {
   min-width: 200px;
   position: relative;
