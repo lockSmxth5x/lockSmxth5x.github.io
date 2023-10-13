@@ -110,16 +110,19 @@ body {
   padding: 0px 0.7rem;
   cursor: pointer;
   color: #999;
-  transition: ease-out 0.37s;
+  /* transition: ease-out 0.37s; */
+  transition: 0.5s;
   transform: translateY(0);
   will-change: transform;
   display: inline-block;
 }
 
 #nav nav a:hover {
-  color: #fff;
-  transform: translateY(-0.3rem);
-  transition: ease-out 0.375s;
+  /* color: #fff; */
+  /* transform: translateY(-0.3rem); */
+  /* transition: ease-out 0.375s; */
+  transform: translateY(7%);
+  color: rgb(200,155,0);
 }
 
 #greeting {
