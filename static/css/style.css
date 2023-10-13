@@ -168,8 +168,9 @@ body {
   /* position: relative; */
   /* top: 10px; */
   /* background: #36363650; */
-  background: linear-gradient(0deg, #0c0c0c50 0%, #36363650 100%);
+  background: linear-gradient(0deg, #0c0c0c50 0%, #36363602 100%);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 @media only screen and not (max-width: 1850px) {
@@ -190,6 +191,14 @@ body {
   /* width: 45%; */
   position: relative;
   top: 10px;
+  transition: 0.45s ease-in-out;
+  transform: translateY(0px);
+  will-change: transform;
+}
+#GitHub:hover {
+  /* border: 5px solid #4e13d8; */
+  /* transition: 0.3s ease; */
+  transform: translateY(-6.5px);
 }
 
 #Replit {
@@ -202,6 +211,14 @@ body {
   position: relative;
   right: 10px;
   height: 79.5vh;
+  transition: 0.45s ease-in-out;
+  transform: translateY(0px);
+  will-change: transform;
+}
+#Replit:hover {
+  /* border: 5px solid #d89913; */
+  /* transition: 0.3s ease; */
+  transform: translateY(-6.5px);
 }
 
 #GitHub,
