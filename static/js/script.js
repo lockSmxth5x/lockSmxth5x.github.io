@@ -56,6 +56,13 @@ function tab_focus_title_thing() {
   });
 }
 
+function allowUpDownKeys(event) {
+  if (event.keyCode == 38 || event.keyCode == 40) {
+    return true;
+  }
+  return false;
+}
+
 
 
 

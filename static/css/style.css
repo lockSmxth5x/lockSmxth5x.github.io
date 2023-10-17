@@ -111,7 +111,7 @@ body {
   cursor: pointer;
   color: #999;
   /* transition: ease-out 0.37s; */
-  transition: 0.5s;
+  transition: 0.415s;
   transform: translateY(0);
   will-change: transform;
   display: inline-block;
@@ -171,7 +171,7 @@ body {
   /* position: relative; */
   /* top: 10px; */
   /* background: #36363650; */
-  background: linear-gradient(0deg, #0c0c0c50 0%, #36363602 100%);
+  background: linear-gradient(0deg, #0c0c0c90 0%, #36363602 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
