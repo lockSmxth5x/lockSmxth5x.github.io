@@ -141,6 +141,10 @@ body {
   overflow: hidden;
   position: sticky;
   top: 4.6rem;
+  transition: filter 0.000000000000000000000000000000000000000000000000000000000000000000000000000000001s;
+  transform: translateZ(0);
+  will-change: transform;
+  filter: blur(0);
 }
 
 #greeting_header {
