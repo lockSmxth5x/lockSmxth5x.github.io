@@ -1,0 +1,36 @@
+In the context of Unix-like operating systems, chmod (change mode) is a command used to set or modify file permissions. File permissions are represented using a three-digit octal number, which can range from 000 to 777. Each digit in the octal number corresponds to a different set of permissions for the file or directory:
+
+- The first digit represents the owner's permissions.
+- The second digit represents the group's permissions.
+- The third digit represents everyone else's (others) permissions.
+
+Each digit is a combination of three individual bits for read (4), write (2), and execute (1) permissions:
+
+- 4 (read): Allows reading or viewing the file's contents.
+- 2 (write): Allows modifying or deleting the file.
+- 1 (execute): Allows executing the file if it's a program or script.
+
+The highest number you can use with chmod for each digit is 7, as this is the sum of the individual bits for read (4), write (2), and execute (1). This means that each digit can be set to 0, 1, 2, 4, or 7. Here's what each digit represents:
+
+- 7: Full permissions (read, write, and execute).
+- 6: Read and write permissions.
+- 5: Read and execute permissions.
+- 4: Read-only permissions.
+- 3: Write and execute permissions.
+- 2: Write-only permissions.
+- 1: Execute-only permissions.
+- 0: No permissions.
+
+For example, if you want to give full permissions (read, write, and execute) to the owner, read-only permissions to the group, and no permissions to others, you would use the chmod command with the octal number 700:
+
+```
+chmod 700 filename
+```
+
+If you want to grant read and write permissions to the owner, read-only permissions to the group, and read-only permissions to others, you would use the octal number 644:
+
+```
+chmod 644 filename
+```
+
+Remember to use chmod responsibly and consider security implications when setting file permissions, especially when dealing with sensitive files or directories.
