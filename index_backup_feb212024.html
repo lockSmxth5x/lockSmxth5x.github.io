@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:url" content="https://locksmxth5x.github.io/" />
+  <meta property="og:type" content="profile.LockSmxth5x" />
+  <meta property="og:title" content="LockSmxth5x" />
+  <meta property="og:description" content="Howdy! I'm LockSmxth5x!" />
+  <meta property="og:image" content="/static/images/logo2.png" />
+  <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/static/css/movement.css" type="text/css" />
+  <link rel="stylesheet" href="/static/css/custom_right_click.css" type="text/css" />
+  <link rel="stylesheet" href="/static/css/font-awesome.css" type="text/css" />
+  <link rel="shortcut icon" href="/static/images/logo2.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <title>LockSmxth5x</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body onload="custom_right_click_menu();tab_focus_title_thing();" onkeydown="return allowUpDownKeys(event);">
+  <div id="content">
+
+    <div id="nav" data-m="bounce-down">
+      <img src="/static/images/logo.png" alt="LockSmxth5x" onclick="home_link()"></img>
+      <nav>
+        <a onclick="home_link();"><i data-feather="home"></i></a>
+        <a onclick="git_profile_link();"><i data-feather="github"></i></a>
+        <a onclick="repl_profile_link();"><i data-feather="code"></i></a>
+        <a onclick="contact_link();"><i data-feather="phone-call"></i></a>
+        <a onclick="window.open('mailto:acme.cardiac.0u@icloud.com');"><i data-feather="mail"></i></a>
+        <a onclick="game_site_link();"><i data-feather="play"></i></a>
+      </nav>
+    </div>
+
+    <section id="greeting">
+      <div id="greeting_header">
+        <h1><span class="auto-type"></span></h1>
+        <h4>Glad to see you here!</h4>
+      </div>
+    </section>
+
+    <section id="cards">
+      <div id="GitHub">
+        <h1 onclick=" window.open('https://github.com/lockSmxth5x') " style="cursor: pointer;">GitHub <span
+            class="material-symbols-outlined" style="font-size: 0.6em;">open_in_new</span></h1>
+        <h4>
+          The Git. Of all Gits.
+        </h4>
+        <img src="./static/images/github_shot.png" alt="GitHub - Astronaut and Earth" width="800" height="auto"
+          style="image-rendering: auto; max-width: 82%; position: relative; top: 6.45%;">
+      </div>
+      <div id="Replit">
+        <h1 onclick="window.open('https://replit.com/@lockSmxth5x')" style="cursor: pointer;">Replit <span
+            class="material-symbols-outlined" style="font-size: 0.6em;">open_in_new</span></h1>
+        <h4>
+          Online IDE. Now an <span onclick="document.location.href = 'https://replit.com/desktop'"
+            style="cursor:pointer;text-decoration:underline;">app</span>.
+        </h4>
+        <img src="./static/images/replit_shot.png" alt="Replit - Desktop App" width="1100" height="auto"
+          style="image-rendering: auto; max-width: 82%; position: relative; top: 12%;">
+      </div>
+    </section>
+
+    <section id="cards2">
+      <div id="GameSite_Card">
+        <h1 onclick="window.open('https://locksmxth5x.github.io/gamehub/')" style="cursor: pointer;">Game Hub
+          <span class="material-symbols-outlined" style="font-size: 0.6em;">open_in_new</span>
+        </h1>
+        <h4>
+          Who wants to play?
+        </h4>
+      </div>
+      <div id="imgContainrr">
+        <img src="/static/images/Slope_Shot_For_Home.png" alt="Slope - Y8" width="1690" height="auto"
+          style="border-top-left-radius: 100px; border-top-right-radius: 100px; image-rendering: auto; max-width: 82%;">
+      </div>
+    </section>
+
+    <script src="/static/js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Hello &#128075;!", "I'm LockSmxth5x!", "Guy who likes Tech...", "IG Reels > TikTok", "Ty PlanMan1717 for the flex!", "Ty Esmél for suggestions!", "Ty Beta202 for some help!", "CEYEM asked me to write this...", "STRAZY sucks at clash...", "Mr. Groffff 🐐", "Sm1 lost to AZ in debate..."],
+        typeSpeed: 45,
+        backSpeed: 50,
+        fadeOut: true,
+        fadeOutClass: 'typed-fade-out',
+        fadeOutDelay: 500,
+        loop: true
+      })
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="/static/js/blur_on_scroll.js"></script>
+
+    <div id="contextMenu" class="context-menu" style="display:none">
+      <ul>
+        <li><a onclick="home_link();"><i data-feather="home"></i>Home</a></li>
+        <li><a onclick="git_profile_link();"><i data-feather="github"></i>GitHub</a></li>
+        <li><a onclick="repl_profile_link();"><i data-feather="code"></i>Replit</a></li>
+        <li><a onclick="contact_link();"><i data-feather="phone-call"></i>Call</a></li>
+        <li><a onclick="window.open('mailto:acme.cardiac.0u@icloud.com');"><i data-feather="mail"></i>Email</a></li>
+        <li><a onclick="game_site_link();"><i data-feather="play"></i>Game Hub</a></li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+
+</html>
